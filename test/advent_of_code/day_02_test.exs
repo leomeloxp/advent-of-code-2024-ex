@@ -5,17 +5,17 @@ defmodule AdventOfCode.Day02Test do
 
   @tag :skip
   test "part1" do
-    input = nil
+    {:ok, input} = File.read("priv/input/day_02_example.txt")
     result = part1(input)
 
-    assert result
+    assert result == 2
   end
 
   @tag :skip
   test "part2" do
-    input = nil
+    {:ok, input} = File.read("priv/input/day_02_example.txt")
     result = part2(input)
 
-    assert result
+    assert result == 4
   end
 end
